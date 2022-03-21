@@ -1,0 +1,15 @@
+
+button{
+    cursor: pointer;
+    padding: 10px;
+    background: #810000;
+    color: white;
+font-family: sans-serif;
+border:0px;
+width: 520px;
+letter-spacing: 2px;
+font-size: medium;
+}
+div{background-color:black;
+width: 520px;
+}
