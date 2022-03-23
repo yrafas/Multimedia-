@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul#ejercicios > li{
+    width: 200px;
+    border: grey 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+ul.tags{
+    text-align: center;
+    padding: 2px 8px;
+}
+ul#ejercicios,
+ul.tags{
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
