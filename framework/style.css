@@ -1,0 +1,130 @@
+:root{
+  --c1:black;
+  --c2:white;
+  --c3:lightseagreen;
+  --c4:lightgray;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  border:0;
+  outline:none;}
+
+body{
+font-family:sans-serif;
+max-width:960px;
+margin:20px auto;
+}
+header,
+main {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0);
+}
+
+footer{
+  background:var(--c1);
+  color:var(--c2);
+  text-align: center;
+  padding:20px;
+}
+
+a{text-decoration:none;}
+
+ul{margin:20px;}
+
+nav ul{
+  list-style:none;
+  padding-left:0;
+  display:flex;
+  gap:2px;
+  justify-content: space-between;
+}
+
+h1{font-size:64px; margin:10px}
+h2{font-size:30px; margin:10px;}
+h3{font-size:25px; margin:10px;}
+
+p{
+  font-size:15px;
+  padding:10px;
+}
+
+button{
+    background: var(--c2);
+    border: 1px solid var(--c3);
+    border-radius: 12px;
+    color: var(--c3);
+    padding: 8px 15px 6px 15px;
+    width: 10%;
+    height: 50px;
+    margin: 5px;
+    cursor:pointer;
+}
+
+.btnhover{
+    background: var(--c2);
+    border: 1px solid var(--c3);
+    border-radius: 12px;
+    color: var(--c3);
+    padding: 8px 15px 6px 15px;
+    width: 10%;
+    height: 50px;
+    margin: 5px;
+    cursor:pointer;
+  
+  transition:0.3s;
+}
+.btnhover:hover{
+     background: var(--c3);
+    color: white;
+    letter-spacing: 2px;
+}
+
+.btnhover2{
+    background: var(--c2);
+    border: 1px solid var(--c3);
+    border-radius: 12px;
+    color: var(--c3);
+    padding: 8px 15px 6px 15px;
+    width: 10%;
+    height: 50px;
+    margin: 5px;
+    cursor:pointer;
+  
+  transition:0.3s;
+}
+
+.btnhover2:hover{
+     background: var(--c4);
+    color: white;
+    letter-spacing: 2px;
+}
+img{
+  max-width:50%;
+  max-heigt:50%;
+}
+
+.avatar {
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.tac{text-align:center}
+.polaroid{
+  border:20px solid white;
+  border-bottom-width:100px;
+  border-radius:5px;
+  transform:rotate(-2deg);
+  box-shadow:2px 2px 8px;
+  margin:30px;
+}
+.shadowbox{
+  box-shadow:2px 2px 8px;
+  padding:10px;
+  margin:10px;
+}
