@@ -3,11 +3,12 @@
     --css:#9CDBFF;
     --js:#FFEFAF;
     --figma:#CDB3D4;
+    --c1:#4d9cca;
 }
 
 
 *{
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -15,18 +16,31 @@
 
 body{
     font-family: sans-serif;
-    padding: 15px;
+    padding: 0px 0px;
     max-width: 960px;
     margin:0 auto;
+ 
 }
 header{
-    margin: 20px;
     text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+    background: var(--c1);
+    border-radius:15px 15px 0px 0px;
+    
+}
+
+footer{background: var(--c1);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0px 0px 15px 15px ;
 }
 a{
     text-decoration: none;
     color: black;
 }
+h1{text-align: center; color: white; padding:20px}
 h3{margin:5px;}
 p{margin:5px;}
 
@@ -37,8 +51,12 @@ ul#ejercicios > li{
     border-radius: 20px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
     padding: 10px;
+    background-color: white;
+    
 }
-
+/* ul#ejercicios > li:hover{
+    background: black;
+} */
 
 ul.tags{
     list-style: none;
@@ -58,6 +76,12 @@ ul#ejercicios.grid{
     flex-wrap: wrap;
     justify-content: center
 }
+
+/* Grid */
+ul#ejercicios.grid .texto{
+    height: 130px;
+}
+/*  */
 /* List */
 ul#ejercicios.list{
     display:flex;
@@ -69,15 +93,15 @@ ul#ejercicios.list > li{
     flex-direction: row;
     border-radius:6px;
     display:flex;
-    gap:15px;
-    padding: 5px;
+    
+    padding: 0px;
 }
 ul#ejercicios.list .texto{
-    width:600px;
+    width:700px;
 }
 ul#ejercicios.list img{
     height: 100px;
-    margin-right: 10px;
+    margin:5px 10px 5px 5px;
 
 }
 
@@ -86,16 +110,17 @@ ul#ejercicios.list a{
 }
 
 ul#ejercicios.list ul.tags{
-   width: 100%;
+   width: 20%;
    justify-content: flex-end;
 }
 
 
 /*  */
 ul.tags li{
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 5px;
 }
+ul.tags{margin:5px;}
 
 ul#ejercicios{
     gap: 15px;
@@ -109,9 +134,23 @@ img{
     border-radius:20px;
 }
 
+
 button{
-    border: none;
-    margin-left: 5%;
+    border: 1px solid;
+    
+    font-size: 17px;
+    background-color: white;
+    color: var(--c1);
+    border-radius: 10px;
+    width:100px;
+    height:30px;
+
+    transition: 0,30s;
+}
+
+button:hover{
+    background-color:var(--c1);
+    color:white;
 }
 
 .js{background-color: var(--js);}
