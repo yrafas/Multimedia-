@@ -8,7 +8,7 @@
 
 
 *{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -79,9 +79,10 @@ ul#ejercicios.grid{
 
 /* Grid */
 ul#ejercicios.grid .texto{
-    height: 130px;
+    height: 140px;
 }
 /*  */
+
 /* List */
 ul#ejercicios.list{
     display:flex;
@@ -110,12 +111,11 @@ ul#ejercicios.list a{
 }
 
 ul#ejercicios.list ul.tags{
-   width: 20%;
+   width: 25%;
    justify-content: flex-end;
 }
-
-
 /*  */
+
 ul.tags li{
     border-radius: 12px;
     padding: 5px;
@@ -157,3 +157,14 @@ button:hover{
 .css{background-color: var(--css);}
 .html{background-color: var(--html);}
 .figma{background-color: var(--figma);}
+
+@media(max-width:800px){
+    ul#ejercicios.list .texto{
+        max-width: 600px;
+    }
+    ul#ejercicios.list ul.tags{
+        flex-direction: column;
+        width: 60px;
+    }
+    
+}
