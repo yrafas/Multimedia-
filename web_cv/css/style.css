@@ -7,7 +7,7 @@
 }
 
 
-*{outline: green 1px solid;} 
+/* *{outline: green 1px solid;}  */
 /*  */
 
 
@@ -201,4 +201,22 @@ ul.comp li > div{
 
 ul.comp li > p{
     border: 3px dashed black
+}
+
+#skillblock{
+    margin:0px 0px 20px 80px;
+    
+
+    
+}
+#skillblock #sb #sa{
+   
+    
+    
+}
+#skillblock .sb{
+    background-color: black;
+    width: 300px;
+    height: 64px;
+    
 }
